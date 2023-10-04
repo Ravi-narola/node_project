@@ -30,6 +30,9 @@ router.get('/view_blog',view_blog);
 router.post('/manage_blog/:id',manage_blog);
 router.get('/delete_blog/:id',delete_blog);
 router.get('/single_blog/:id',single_blog);
+router.get('/', function (req, res) {
+  res.send('project working')
+});
 
 
 module.exports = router;
